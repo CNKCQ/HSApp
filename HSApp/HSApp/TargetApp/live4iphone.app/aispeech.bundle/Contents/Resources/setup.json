@@ -1,0 +1,5 @@
+{
+    "modelFile": "modelParameters_v1.bin",
+    "meanStdInfo": "featureMeanStd_v1.bin",
+    "configFile": "translator_v2_backend.json"
+}

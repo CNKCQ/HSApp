@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA796EF7234A27BC003774BB /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA796EF6234A27BC003774BB /* MDConfig.plist */; };
+		AA796F01234A27BC003774BB /* libHSAppDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA796F00234A27BC003774BB /* libHSAppDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA796F06234A27BC003774BB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA796F05234A27BC003774BB /* JavaScriptCore.framework */; };
+		AA796F08234A27BC003774BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA796F07234A27BC003774BB /* Foundation.framework */; };
+		AA796F0A234A27BC003774BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA796F09234A27BC003774BB /* UIKit.framework */; };
+		AA796F0F234A27BC003774BB /* HSAppDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA796F0E234A27BC003774BB /* HSAppDylib.mm */; };
+		AA796F12234A27BC003774BB /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F11234A27BC003774BB /* MDConfigManager.h */; };
+		AA796F14234A27BC003774BB /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F13234A27BC003774BB /* MDConfigManager.m */; };
+		AA796F16234A27BC003774BB /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F15234A27BC003774BB /* MDCycriptManager.h */; };
+		AA796F18234A27BC003774BB /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F17234A27BC003774BB /* MDCycriptManager.m */; };
+		AA796F1A234A27BC003774BB /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F19234A27BC003774BB /* MDMethodTrace.h */; };
+		AA796F1C234A27BC003774BB /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F1B234A27BC003774BB /* MDMethodTrace.m */; };
+		AA796F1F234A27BC003774BB /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F1E234A27BC003774BB /* a1a2-selectortramps-arm.s */; };
+		AA796F21234A27BC003774BB /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F20234A27BC003774BB /* a1a2-selectortramps-arm64.s */; };
+		AA796F23234A27BC003774BB /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F22234A27BC003774BB /* a1a2-selectortramps-i386.s */; };
+		AA796F25234A27BC003774BB /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F24234A27BC003774BB /* a1a2-selectortramps-x86_64.s */; };
+		AA796F27234A27BC003774BB /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F26234A27BC003774BB /* a2a3-selectortramps-arm.s */; };
+		AA796F29234A27BC003774BB /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F28234A27BC003774BB /* a2a3-selectortramps-i386.s */; };
+		AA796F2B234A27BC003774BB /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = AA796F2A234A27BC003774BB /* a2a3-selectortramps-x86_64.s */; };
+		AA796F2D234A27BC003774BB /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F2C234A27BC003774BB /* OCMethodTrace.h */; };
+		AA796F2F234A27BC003774BB /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F2E234A27BC003774BB /* OCMethodTrace.m */; };
+		AA796F31234A27BC003774BB /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F30234A27BC003774BB /* OCSelectorTrampolines.h */; };
+		AA796F33234A27BC003774BB /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA796F32234A27BC003774BB /* OCSelectorTrampolines.mm */; };
+		AA796F37234A27BC003774BB /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F36234A27BC003774BB /* LLDBTools.h */; };
+		AA796F39234A27BC003774BB /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA796F38234A27BC003774BB /* LLDBTools.mm */; };
+		AA796F3E234A27BC003774BB /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F3D234A27BC003774BB /* AntiAntiDebug.m */; };
+		AA796F41234A27BC003774BB /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = AA796F40234A27BC003774BB /* fishhook.c */; };
+		AA796F43234A27BC003774BB /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F42234A27BC003774BB /* fishhook.h */; };
+		AA796F45234A27BC003774BB /* HSAppDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F44234A27BC003774BB /* HSAppDylib.h */; };
+		AA796F47234A27BC003774BB /* HSAppDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F46234A27BC003774BB /* HSAppDylib.m */; };
+		AA796F52234A2B23003774BB /* HSApp.h in Headers */ = {isa = PBXBuildFile; fileRef = AA796F50234A2B23003774BB /* HSApp.h */; };
+		AA796F53234A2B23003774BB /* HSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = AA796F51234A2B23003774BB /* HSApp.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA796F02234A27BC003774BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA796EE4234A27BC003774BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA796EFF234A27BC003774BB;
+			remoteInfo = HSAppDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA796EEC234A27BC003774BB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA796F01234A27BC003774BB /* libHSAppDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA796EEF234A27BC003774BB /* HSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA796EF2234A27BC003774BB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AA796EF4234A27BC003774BB /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		AA796EF6234A27BC003774BB /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		AA796EF9234A27BC003774BB /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		AA796EFA234A27BC003774BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA796F00234A27BC003774BB /* libHSAppDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libHSAppDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA796F05234A27BC003774BB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		AA796F07234A27BC003774BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA796F09234A27BC003774BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA796F0D234A27BC003774BB /* HSAppDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = HSAppDylib.xm; sourceTree = "<group>"; };
+		AA796F0E234A27BC003774BB /* HSAppDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HSAppDylib.mm; sourceTree = "<group>"; };
+		AA796F11234A27BC003774BB /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		AA796F13234A27BC003774BB /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		AA796F15234A27BC003774BB /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		AA796F17234A27BC003774BB /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		AA796F19234A27BC003774BB /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		AA796F1B234A27BC003774BB /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		AA796F1E234A27BC003774BB /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		AA796F20234A27BC003774BB /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		AA796F22234A27BC003774BB /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		AA796F24234A27BC003774BB /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		AA796F26234A27BC003774BB /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		AA796F28234A27BC003774BB /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		AA796F2A234A27BC003774BB /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		AA796F2C234A27BC003774BB /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		AA796F2E234A27BC003774BB /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		AA796F30234A27BC003774BB /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		AA796F32234A27BC003774BB /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		AA796F34234A27BC003774BB /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		AA796F36234A27BC003774BB /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		AA796F38234A27BC003774BB /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		AA796F3B234A27BC003774BB /* HSAppDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HSAppDylib-Prefix.pch"; path = "../HSAppDylib-Prefix.pch"; sourceTree = "<group>"; };
+		AA796F3D234A27BC003774BB /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		AA796F40234A27BC003774BB /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		AA796F42234A27BC003774BB /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		AA796F44234A27BC003774BB /* HSAppDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAppDylib.h; sourceTree = "<group>"; };
+		AA796F46234A27BC003774BB /* HSAppDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAppDylib.m; sourceTree = "<group>"; };
+		AA796F50234A2B23003774BB /* HSApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSApp.h; sourceTree = "<group>"; };
+		AA796F51234A2B23003774BB /* HSApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSApp.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA796EE9234A27BC003774BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA796EFD234A27BC003774BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA796F06234A27BC003774BB /* JavaScriptCore.framework in Frameworks */,
+				AA796F0A234A27BC003774BB /* UIKit.framework in Frameworks */,
+				AA796F08234A27BC003774BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA796EE3234A27BC003774BB = {
+			isa = PBXGroup;
+			children = (
+				AA796EF1234A27BC003774BB /* HSApp */,
+				AA796F0B234A27BC003774BB /* HSAppDylib */,
+				AA796F04234A27BC003774BB /* Frameworks */,
+				AA796EF0234A27BC003774BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA796EF0234A27BC003774BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA796EEF234A27BC003774BB /* HSApp.app */,
+				AA796F00234A27BC003774BB /* libHSAppDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA796EF1234A27BC003774BB /* HSApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA796EF2234A27BC003774BB /* icon.png */,
+				AA796EFA234A27BC003774BB /* Info.plist */,
+				AA796EF3234A27BC003774BB /* Scripts */,
+				AA796EF5234A27BC003774BB /* Config */,
+				AA796EF8234A27BC003774BB /* TargetApp */,
+			);
+			path = HSApp;
+			sourceTree = "<group>";
+		};
+		AA796EF3234A27BC003774BB /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				AA796EF4234A27BC003774BB /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		AA796EF5234A27BC003774BB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AA796EF6234A27BC003774BB /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AA796EF8234A27BC003774BB /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA796EF9234A27BC003774BB /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		AA796F04234A27BC003774BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F05234A27BC003774BB /* JavaScriptCore.framework */,
+				AA796F07234A27BC003774BB /* Foundation.framework */,
+				AA796F09234A27BC003774BB /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA796F0B234A27BC003774BB /* HSAppDylib */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F44234A27BC003774BB /* HSAppDylib.h */,
+				AA796F46234A27BC003774BB /* HSAppDylib.m */,
+				AA796F0C234A27BC003774BB /* Logos */,
+				AA796F10234A27BC003774BB /* Config */,
+				AA796F1D234A27BC003774BB /* Trace */,
+				AA796F35234A27BC003774BB /* Tools */,
+				AA796F3C234A27BC003774BB /* AntiAntiDebug */,
+				AA796F3F234A27BC003774BB /* fishhook */,
+				AA796F3A234A27BC003774BB /* Supporting Files */,
+				AA796F50234A2B23003774BB /* HSApp.h */,
+				AA796F51234A2B23003774BB /* HSApp.m */,
+			);
+			path = HSAppDylib;
+			sourceTree = "<group>";
+		};
+		AA796F0C234A27BC003774BB /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F0D234A27BC003774BB /* HSAppDylib.xm */,
+				AA796F0E234A27BC003774BB /* HSAppDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		AA796F10234A27BC003774BB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F11234A27BC003774BB /* MDConfigManager.h */,
+				AA796F13234A27BC003774BB /* MDConfigManager.m */,
+				AA796F15234A27BC003774BB /* MDCycriptManager.h */,
+				AA796F17234A27BC003774BB /* MDCycriptManager.m */,
+				AA796F19234A27BC003774BB /* MDMethodTrace.h */,
+				AA796F1B234A27BC003774BB /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AA796F1D234A27BC003774BB /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F1E234A27BC003774BB /* a1a2-selectortramps-arm.s */,
+				AA796F20234A27BC003774BB /* a1a2-selectortramps-arm64.s */,
+				AA796F22234A27BC003774BB /* a1a2-selectortramps-i386.s */,
+				AA796F24234A27BC003774BB /* a1a2-selectortramps-x86_64.s */,
+				AA796F26234A27BC003774BB /* a2a3-selectortramps-arm.s */,
+				AA796F28234A27BC003774BB /* a2a3-selectortramps-i386.s */,
+				AA796F2A234A27BC003774BB /* a2a3-selectortramps-x86_64.s */,
+				AA796F2C234A27BC003774BB /* OCMethodTrace.h */,
+				AA796F2E234A27BC003774BB /* OCMethodTrace.m */,
+				AA796F30234A27BC003774BB /* OCSelectorTrampolines.h */,
+				AA796F32234A27BC003774BB /* OCSelectorTrampolines.mm */,
+				AA796F34234A27BC003774BB /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		AA796F35234A27BC003774BB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F36234A27BC003774BB /* LLDBTools.h */,
+				AA796F38234A27BC003774BB /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		AA796F3A234A27BC003774BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F3B234A27BC003774BB /* HSAppDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA796F3C234A27BC003774BB /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F3D234A27BC003774BB /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		AA796F3F234A27BC003774BB /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				AA796F40234A27BC003774BB /* fishhook.c */,
+				AA796F42234A27BC003774BB /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA796EFE234A27BC003774BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA796F16234A27BC003774BB /* MDCycriptManager.h in Headers */,
+				AA796F1A234A27BC003774BB /* MDMethodTrace.h in Headers */,
+				AA796F45234A27BC003774BB /* HSAppDylib.h in Headers */,
+				AA796F52234A2B23003774BB /* HSApp.h in Headers */,
+				AA796F43234A27BC003774BB /* fishhook.h in Headers */,
+				AA796F37234A27BC003774BB /* LLDBTools.h in Headers */,
+				AA796F12234A27BC003774BB /* MDConfigManager.h in Headers */,
+				AA796F31234A27BC003774BB /* OCSelectorTrampolines.h in Headers */,
+				AA796F2D234A27BC003774BB /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA796EEE234A27BC003774BB /* HSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA796F4D234A27BC003774BB /* Build configuration list for PBXNativeTarget "HSApp" */;
+			buildPhases = (
+				AA796EE8234A27BC003774BB /* Sources */,
+				AA796EE9234A27BC003774BB /* Frameworks */,
+				AA796EEA234A27BC003774BB /* ShellScript */,
+				AA796EEB234A27BC003774BB /* Resources */,
+				AA796EEC234A27BC003774BB /* CopyFiles */,
+				AA796EED234A27BC003774BB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA796F03234A27BC003774BB /* PBXTargetDependency */,
+			);
+			name = HSApp;
+			productName = HSApp;
+			productReference = AA796EEF234A27BC003774BB /* HSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA796EFF234A27BC003774BB /* HSAppDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA796F4A234A27BC003774BB /* Build configuration list for PBXNativeTarget "HSAppDylib" */;
+			buildPhases = (
+				AA796EFB234A27BC003774BB /* ShellScript */,
+				AA796EFC234A27BC003774BB /* Sources */,
+				AA796EFD234A27BC003774BB /* Frameworks */,
+				AA796EFE234A27BC003774BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSAppDylib;
+			productName = HSAppDylib;
+			productReference = AA796F00234A27BC003774BB /* libHSAppDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA796EE4234A27BC003774BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = steve;
+				TargetAttributes = {
+					AA796EEE234A27BC003774BB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					AA796EFF234A27BC003774BB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = AA796EE7234A27BC003774BB /* Build configuration list for PBXProject "HSApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA796EE3234A27BC003774BB;
+			productRefGroup = AA796EF0234A27BC003774BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA796EEE234A27BC003774BB /* HSApp */,
+				AA796EFF234A27BC003774BB /* HSAppDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA796EEB234A27BC003774BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA796EF7234A27BC003774BB /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA796EEA234A27BC003774BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		AA796EED234A27BC003774BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign\n";
+		};
+		AA796EFB234A27BC003774BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA796EE8234A27BC003774BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA796EFC234A27BC003774BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA796F53234A2B23003774BB /* HSApp.m in Sources */,
+				AA796F18234A27BC003774BB /* MDCycriptManager.m in Sources */,
+				AA796F21234A27BC003774BB /* a1a2-selectortramps-arm64.s in Sources */,
+				AA796F1F234A27BC003774BB /* a1a2-selectortramps-arm.s in Sources */,
+				AA796F25234A27BC003774BB /* a1a2-selectortramps-x86_64.s in Sources */,
+				AA796F2F234A27BC003774BB /* OCMethodTrace.m in Sources */,
+				AA796F14234A27BC003774BB /* MDConfigManager.m in Sources */,
+				AA796F41234A27BC003774BB /* fishhook.c in Sources */,
+				AA796F3E234A27BC003774BB /* AntiAntiDebug.m in Sources */,
+				AA796F33234A27BC003774BB /* OCSelectorTrampolines.mm in Sources */,
+				AA796F23234A27BC003774BB /* a1a2-selectortramps-i386.s in Sources */,
+				AA796F29234A27BC003774BB /* a2a3-selectortramps-i386.s in Sources */,
+				AA796F27234A27BC003774BB /* a2a3-selectortramps-arm.s in Sources */,
+				AA796F0F234A27BC003774BB /* HSAppDylib.mm in Sources */,
+				AA796F39234A27BC003774BB /* LLDBTools.mm in Sources */,
+				AA796F47234A27BC003774BB /* HSAppDylib.m in Sources */,
+				AA796F2B234A27BC003774BB /* a2a3-selectortramps-x86_64.s in Sources */,
+				AA796F1C234A27BC003774BB /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA796F03234A27BC003774BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA796EFF234A27BC003774BB /* HSAppDylib */;
+			targetProxy = AA796F02234A27BC003774BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA796F48234A27BC003774BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA796F49234A27BC003774BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA796F4B234A27BC003774BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9GV74E7ZQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HSAppDylib/HSAppDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libHSAppDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"HSAppDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		AA796F4C234A27BC003774BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Y9GV74E7ZQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HSAppDylib/HSAppDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libHSAppDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"HSAppDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA796F4E234A27BC003774BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9GV74E7ZQ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = HSApp/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.HSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA796F4F234A27BC003774BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9GV74E7ZQ;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = HSApp/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.HSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA796EE7234A27BC003774BB /* Build configuration list for PBXProject "HSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA796F48234A27BC003774BB /* Debug */,
+				AA796F49234A27BC003774BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA796F4A234A27BC003774BB /* Build configuration list for PBXNativeTarget "HSAppDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA796F4B234A27BC003774BB /* Debug */,
+				AA796F4C234A27BC003774BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA796F4D234A27BC003774BB /* Build configuration list for PBXNativeTarget "HSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA796F4E234A27BC003774BB /* Debug */,
+				AA796F4F234A27BC003774BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA796EE4234A27BC003774BB /* Project object */;
+}

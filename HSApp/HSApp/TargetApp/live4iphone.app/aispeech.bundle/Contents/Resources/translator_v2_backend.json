@@ -1,0 +1,44 @@
+{
+    "outputBufferSize": 9600,
+
+    "______feature_setup______": true,
+    "fs": 16000,
+    "nFrameInClip": 12,
+    "nFrameFeaDim": 40,
+    "clipShift": 1,
+    "frame_shift_ms": 16.0,
+    "frame_length_ms": 48.0,
+
+    "______model_setup______": true,
+    "outputsize": 2,
+    "hiddensize": 200,
+    "layernum": 2,
+
+    "______postProcessing_setup______": true,
+    "medianFilterDur": 0.16,
+    "medianFilterDur_en": 0.64,
+    "topEnergyWin": 3,
+
+    "vadMode": 0,
+    "threshold": 0.65,
+    "speechEnThr": -45,
+    "speechDiffEnThr": -45,
+    "dropEndThr": -8,
+    "smTime_noise": 15.0,
+    "smTime_top": 0.3,
+    "smTime_fast": 0.01,
+    "smTime_slow": 0.20,
+
+    "______cutting_setup______": true,
+    "enableEnergyDropCut": false,
+    "minRedFac": 0.15,
+    "minSpDur": 1,
+
+    "vadCutMode": 3,
+    "vadEndWaitDur": 0.20,
+    "spAccDurThr0": 1.0,
+    "spAccDurThr1": 5,
+    "spAccDurThr2": 15,
+    "spAccDurThrMax": 20
+
+}

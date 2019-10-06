@@ -1,0 +1,125 @@
+{
+  "id": 1,
+  "version": 0,
+  "code": {
+    "type":"Container",
+    "id":"rootview",
+    "height":"auto",
+    "flex-grow":"1",
+    "flex-direction":"row",
+    "align-items":"flex-start",
+    "padding-left":"24",
+    "padding-right":"24",
+    "padding-bottom":"40",
+    "need-exposure": "true",
+    "children": [
+      {
+        "type": "Container",
+        "width": "auto",
+        "height": "auto",
+        "flex-direction": "column",
+        "align-items": "center",
+        "flex-shrink":"0",
+        "children": [
+          {
+            "type": "Image",
+            "id": "left_icon_view",
+            "width": "30",
+            "height": "30",
+            "place-holder": "local://icon_postbar_discuss"
+          },
+          {
+            "type": "Text",
+            "id": "left_text_view",
+            "font-size": "22",
+            "color": "#848494",
+            "max-lines": "1",
+            "ellipsize": "end",
+            "margin-top": "5",
+            "font-family":"Oswald-Medium",
+            "text": "72"
+          }
+        ]
+      },
+      {
+        "type":"Container",
+        "height":"auto",
+        "margin-left":"10",
+        "flex-grow":"1",
+        "flex-direction":"column",
+        "align-items":"flex-start",
+        "children":[
+          {
+            "type":"Text",
+            "id":"discussion_title_text",
+            "height":"auto",
+            "max-lines":"2",
+            "ellipsize":"end",
+            "font-size":"30",
+            "color":"#222222",
+            "text":"hello world"
+          },
+          {
+            "type":"Container",
+            "height":"auto",
+            "margin-top":"14",
+            "flex-direction":"row",
+            "justify-content":"flex-start",
+            "children":[
+              {
+                "type":"Text",
+                "id":"discussion_nick_name",
+                "width":"auto",
+                "height":"auto",
+                "font-size":"22",
+                "color":"#222222",
+                "max-lines":"1",
+                "ellipsize":"end",
+                "margin-right":"16",
+                "text":"discussion_nick_name"
+              },
+              {
+                "type":"Text",
+                "id":"discussion_update_time",
+                "width":"auto",
+                "height":"auto",
+                "font-size":"22",
+                "color":"#848494",
+                "max-lines":"1",
+                "text":"discussion_update_time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type":"Container",
+        "width":"auto",
+        "height":"auto",
+        "margin-left":"24",
+        "children":[
+          {
+            "type":"Image",
+            "id":"item_image_view",
+            "width":"128",
+            "height":"128",
+            "border-top-left-radius": "8",
+            "border-top-right-radius": "8",
+            "border-bottom-right-radius": "8",
+            "border-bottom-left-radius": "8"
+          },
+          {
+            "type":"Image",
+            "id":"item_play_icon",
+            "width":"30",
+            "height":"30",
+            "place-holder": "local://player_icon",
+            "position":"absolute",
+            "left":"49",
+            "top":"49"
+          }
+        ]
+      }
+    ]
+  }
+}
